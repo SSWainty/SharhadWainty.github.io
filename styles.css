@@ -63,3 +63,15 @@ p{line-height:1.6}
 .btn:hover{background:rgba(139,180,255,.18); text-decoration:none}
 
 .footer{padding:14px 0 0}
+
+.center{text-align:center}
+
+.headshot{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid var(--line);
+  margin-bottom:10px;
+}
+
