@@ -1,0 +1,65 @@
+:root{
+  --bg:#0b1220;
+  --card:#0f1a2f;
+  --text:#eaf0ff;
+  --muted:#b6c2e2;
+  --line:rgba(255,255,255,.12);
+  --accent:#8bb4ff;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text);}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{max-width:980px; margin:0 auto; padding:24px;}
+.top{border-bottom:1px solid var(--line); background:linear-gradient(180deg, rgba(139,180,255,.16), rgba(0,0,0,0));}
+.hero{display:grid; grid-template-columns: 1.3fr .7fr; gap:16px; align-items:start;}
+@media (max-width: 900px){ .hero{grid-template-columns:1fr;} }
+
+h1{margin:0 0 8px; font-size:40px; letter-spacing:-.02em}
+.subtitle{margin:0 0 12px; color:var(--muted); font-size:16px}
+.meta{margin:0 0 12px; color:var(--muted)}
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chips span{border:1px solid var(--line); padding:6px 10px; border-radius:999px; font-size:13px; color:var(--muted); background:rgba(255,255,255,.03)}
+
+.nav{display:flex; flex-wrap:wrap; gap:12px; padding:16px 0 6px}
+.nav a{border:1px solid var(--line); padding:8px 10px; border-radius:10px; color:var(--text); background:rgba(255,255,255,.03)}
+.nav a:hover{background:rgba(255,255,255,.07); text-decoration:none}
+
+.section{padding:26px 0; border-bottom:1px solid var(--line);}
+.section:last-child{border-bottom:none}
+h2{margin:0 0 14px; font-size:22px}
+h3{margin:0 0 8px; font-size:16px}
+p{line-height:1.6}
+
+.card, .panel, .item{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:16px;
+}
+
+.item{margin:12px 0}
+.row{display:flex; gap:12px; justify-content:space-between; align-items:baseline}
+.tag{border:1px solid var(--line); color:var(--muted); padding:4px 10px; border-radius:999px; font-size:12px; white-space:nowrap}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.tight{margin:8px 0 0; padding-left:18px}
+.tight li{margin:6px 0}
+
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.grid3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px}
+@media (max-width: 900px){ .grid2,.grid3{grid-template-columns:1fr} }
+
+.btn{
+  display:inline-block;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:rgba(139,180,255,.12);
+  color:var(--text);
+}
+.btn:hover{background:rgba(139,180,255,.18); text-decoration:none}
+
+.footer{padding:14px 0 0}
